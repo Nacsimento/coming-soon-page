@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Libre Franklin', sans-serif;;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 86px 16px;
+    gap: 36px;
+    
+}
+
+img{
+    width: 100%;
+}
+
+.info h1{
+    font-size: 20px;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+}
+
+span{
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+
+.info p{
+    font-size: 14px;
+    font-weight: 300;
+    color:hsl(209, 33%, 12%) ;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.image{
+    padding: 46px 0px;
+}
+
+input{
+    width: 100%;
+    padding: 16px 18px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid hsl(223, 100%, 88%) ;
+    outline: none;
+    color: hsl(209, 33%, 12%) ;
+    
+}
+
+::placeholder{
+    color:hsl(223, 100%, 88%) ;
+}
+
+button{
+    width: 100%;
+    padding: 16px 18px;
+    border-radius: 50px;
+    border: none ;
+    outline: none;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    
+}
+
+button:hover{
+    background-color:hsl(223, 100%, 88%) ;
+}
+.footer p{
+    color: hsl(0, 0%, 59%);
+    font-size: 16px;
+}
+
+.error{
+    color: hsl(354, 100%, 66%);
+    font-size: 12px;
+    text-align: center;
+    display: none;
+    
+}
+.sucess{
+    color: hsl(113, 89%, 49%);
+    font-size: 12px;
+    text-align: center;
+    display: none;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.icon-box{
+    padding: 12px 14px 12px 14px;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 50%;
+    font-size: 20px;
+    color: hsl(223, 87%, 63%);
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.icon-box:hover{
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+.icons{
+    display: flex;
+    gap: 25px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 6px;
+    align-items: center;
+}
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+    main{
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        width: 50%;
+    }
+
+    .form{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .input{
+        flex-basis: 70%;
+    }
+    button{
+        flex-basis:30% ;
+    }
+
+    .info h1{
+        font-size: 46px;
+    }
+    .info p{
+        font-size: 16px;
+    }
+    .banner{
+        width: 90%;
+    }
+  }
+
